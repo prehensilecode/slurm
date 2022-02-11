@@ -47,6 +47,9 @@ HIGHLIGHTS
     through gres.conf.
  -- Node state flags (DRAIN, FAILED, POWERING UP, etc.) will be cleared now if
     node state is updated to FUTURE.
+ -- Add support to update all the nodes in the local cluster when the nodelist
+    expression in the update node message is "ALL" (i.e. 'scontrol update
+    NodeName=ALL').
 
 CONFIGURATION FILE CHANGES (see man appropriate man page for details)
 =====================================================================
